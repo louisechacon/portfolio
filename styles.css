@@ -66,11 +66,17 @@ main {
     display: inline-block;
     background-color: var(--rosa);
     color: white;
-    border-radius: 4px;
-    padding: 10px 20px;
+    border-radius: 8px;
+    padding: 15px 30px;
     margin-top: 30px;
     margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
+}
+
+.botao-curriculo i {
+    margin-right: 8px;
 }
 
 .botao-curriculo:hover {
