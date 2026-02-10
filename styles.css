@@ -89,12 +89,12 @@ main {
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 10px 25px #EDF7FA;
+    box-shadow: 0px 10px 25px #C4DFEC;
 }
 
 .habilidades h2 {
     color: var(--azul);
-    font-size: 32px;
+    font-size: 28px;
     grid-column: 1 / -1;
     text-align: left;
 }
@@ -118,6 +118,80 @@ main {
     font-size: 40px;
 }
 
+.skill-card:hover {
+    transform:scale(1.1);
+}
+
 .skills h4 {
     color: var(--rosa);
+}
+
+.projetos {
+    padding: 50px 0px;
+}
+
+.projetos h2 {
+    color: var(--azul);
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.trabalhos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0px 20px;
+}
+
+.card-projeto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid #C2CCCA;
+    padding-bottom: 30px;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 25px #C4DFEC;
+
+}
+
+.thumbnail:hover {
+    transform: translateY(-2px);
+}
+
+.info-projetos {
+    align-self: start;
+}
+
+.info-projetos h3 {
+    color: var(--rosa);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.botao-projeto {
+    display: inline-block;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.botao-projeto i {
+    margin-right: 8px;
+}
+
+.botao-projeto:hover {
+    filter: brightness(120%);
+    transform: translateY(-2px);
 }
