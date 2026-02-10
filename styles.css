@@ -69,6 +69,7 @@ main {
     border-radius: 4px;
     padding: 10px 20px;
     margin-top: 30px;
+    margin-bottom: 60px;
     text-decoration: none;
 }
 
@@ -83,4 +84,34 @@ main {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 10px 25px #EDF7FA;
+}
+
+.habilidades h2 {
+    color: var(--azul);
+    font-size: 32px;
+    grid-column: 1 / -1;
+    text-align: left;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.hard-skills,
+.soft-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skills i {
+    font-size: 40px;
+}
+
+.skills h4 {
+    color: var(--rosa);
 }
