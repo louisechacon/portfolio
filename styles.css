@@ -47,7 +47,7 @@ main {
     margin: 0 auto;
 }
 
-.conteudo {
+.sobre {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
