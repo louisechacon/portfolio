@@ -20,6 +20,9 @@ body {
 header {
     background-color: var(--azul);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -41,10 +44,18 @@ header {
     color: var(--rosa);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     padding: 100px 20px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+section {
+    scroll-margin-top: 100px;
 }
 
 .sobre {
@@ -194,4 +205,28 @@ main {
 .botao-projeto:hover {
     filter: brightness(120%);
     transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--rosa);
+    padding: 25px 0px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.redes a {
+    font-size: 40px;
+    color: var(--azul);
+}
+
+.redes a:hover {
+    color: white;
 }
