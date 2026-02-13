@@ -1,15 +1,32 @@
 :root {
-
     --rosa: #FF80A1;
     --azul: #24263B;
+    --cor-fundo: white;
+    --cor-texto: black;
+    --cor-titulo: #24263B;
+    --cor-card-bg: white;
+    --cor-sombra: #C4DFEC;
+    --cor-borda: #C2CCCA;
+}
+
+.dark-mode {
+    --cor-fundo: #121212;
+    --cor-texto: white;
+    --cor-titulo: white;
+    --cor-card-bg: #1e1e1e;
+    --cor-sombra: #000000;
+    --cor-borda: #333333;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: 'Heebo', sans-serif;
 }
 
@@ -26,10 +43,9 @@ header {
 }
 
 .nav-links {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    text-align: center;
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
     gap: 20px;
 }
@@ -41,6 +57,16 @@ header {
 }
 
 .nav-links a:hover {
+    color: var(--rosa);
+}
+
+#tema-btn {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+#tema-btn:hover {
     color: var(--rosa);
 }
 
@@ -66,11 +92,11 @@ section {
     gap: 20px;
 }
 
-.conteudo h1 {
-    color: var(--azul);
-    font-size: 48px;
+.sobre h1 {
+    color: var(--cor-titulo);
+    font-size: 44px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .botao-curriculo {
@@ -100,11 +126,11 @@ section {
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 10px 25px #C4DFEC;
+    box-shadow: 0px 10px 25px var(--cor-sombra);
 }
 
 .habilidades h2 {
-    color: var(--azul);
+    color: var(--cor-titulo);
     font-size: 28px;
     grid-column: 1 / -1;
     text-align: left;
@@ -142,7 +168,7 @@ section {
 }
 
 .projetos h2 {
-    color: var(--azul);
+    color: var(--cor-titulo);
     font-size: 28px;
     margin-top: 40px;
 }
@@ -160,7 +186,7 @@ section {
     gap: 40px;
     align-items: center;
     margin-top: 30px;
-    border-bottom: 1px solid #C2CCCA;
+    border-bottom: 1px solid var(--cor-borda);
     padding-bottom: 30px;
 }
 
@@ -169,7 +195,7 @@ section {
     max-width: 280px;
     border-radius: 8px;
     margin-bottom: 15px;
-    box-shadow: 0px 10px 25px #C4DFEC;
+    box-shadow: 0px 10px 25px var(--cor-sombra);
 
 }
 
