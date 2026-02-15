@@ -60,13 +60,67 @@ header {
     color: var(--rosa);
 }
 
-#tema-btn {
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
+.toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-#tema-btn:hover {
+.toggle {
+    width: 70px;
+    height: 32px;
+    background-color: #575B7D;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-circulo {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+.toggle i {
+    font-size: 16px;
+    z-index: 3;
+    transition: color 0.3s;
+    pointer-events: none;
+}
+
+.fa-sun {
+    color: var(--rosa);
+}
+
+.fa-moon {
+    color: #B8C1EC;
+}
+
+.toggle input:checked ~ .toggle-circulo {
+    transform: translateX(34px);
+}
+
+.toggle:has(input:focus-visible) {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.toggle input:checked ~ .fa-sun {
+    color: #B8C1EC;
+}
+.toggle input:checked ~ .fa-moon {
     color: var(--rosa);
 }
 

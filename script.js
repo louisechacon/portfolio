@@ -1,13 +1,18 @@
-const temaBtn = document.getElementById('tema-btn');
+const temaBtn = document.getElementById("tema-checkbox");
+const temaSalvo = localStorage.getItem("tema");
 
-temaBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+if (temaSalvo === "dark") {
+    temaBtn.checked = true;
+    document.body.classList.add("dark-mode");
+}
 
-    if (document.body.classList.contains('dark-mode')) {
-        temaBtn.classList.remove('fa-regular', 'fa-moon');
-        temaBtn.classList.add('fa-solid', 'fa-sun');
+temaBtn.addEventListener("click", () => {
+    if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("tema", "light");
+        
     } else {
-        temaBtn.classList.remove('fa-solid', 'fa-sun');
-        temaBtn.classList.add('fa-regular', 'fa-moon');
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("tema", "dark");
     }
 });
