@@ -209,9 +209,6 @@ section {
     font-size: 40px;
 }
 
-.skill-card:hover {
-    transform:scale(1.1);
-}
 
 .skills h3 {
     color: var(--rosa);
