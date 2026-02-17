@@ -1,5 +1,5 @@
 :root {
-    --rosa: #FF80A1;
+    --rosa: #FF4F87;
     --azul: #24263B;
     --cor-fundo: white;
     --cor-texto: black;
@@ -28,6 +28,10 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: 'Heebo', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #container {
@@ -129,10 +133,6 @@ header {
     color: var(--rosa);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 main {
     padding: 100px 20px;
     max-width: 900px;
@@ -176,8 +176,7 @@ section {
 }
 
 .botao-curriculo:hover {
-    filter: brightness(110%);
-    transform: translateY(-2px);
+    filter: brightness(120%);
 }
 
 .icone {
@@ -286,7 +285,6 @@ section {
 
 .botao-projeto:hover {
     filter: brightness(120%);
-    transform: translateY(-2px);
 }
 
 footer {
