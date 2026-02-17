@@ -400,3 +400,11 @@ footer {
         height: 240px;
     }
 }
+
+footer {
+    padding: 25px 15px;
+}
+
+.redes i {
+    font-size: 45px;
+}
