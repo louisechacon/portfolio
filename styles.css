@@ -345,10 +345,6 @@ footer {
         z-index: 1001;
     }
 
-    #btn-menu:hover {
-        color: var(--rosa);
-    }
-
     #btn-fechar {
         display: block;
         color: white;
@@ -378,10 +374,6 @@ footer {
 
     .nav-links.active {
         right: 0;
-    }
-
-    .nav-links a:hover {
-        color: var(--rosa);
     }
 
     main {
