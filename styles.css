@@ -34,6 +34,11 @@ body {
     display: grid;
 }
 
+#btn-menu,
+#btn-fechar {
+    display: none;
+}
+
 header {
     background-color: var(--azul);
     padding: 20px;
@@ -306,4 +311,102 @@ footer {
 
 .redes a:hover {
     color: white;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        display: grid;
+        justify-content: end;
+        padding: 0px 20px;
+        z-index: 1003;
+        transition: background-color 0.3s ease;
+    }
+
+    header.menu-open {
+        background-color: transparent;
+    }
+
+    header.menu-open #btn-menu {
+        display: none;
+    }
+
+    #btn-menu {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        z-index: 1001;
+    }
+
+    #btn-menu:hover {
+        color: var(--rosa);
+    }
+
+    #btn-fechar {
+        display: block;
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: var(--azul);
+        gap: 30px;
+        transition: 0.3s;
+        z-index: 1002;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a:hover {
+        color: var(--rosa);
+    }
+
+    main {
+        margin-top: 80px;
+        padding: 80px 20px;
+        max-width: 90%;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foto {
+        order: -1; 
+        margin-bottom: 10px;
+    }
+
+    .sobre h1 {
+        font-size: 32px;
+    }
+
+    .icone {
+        width: 240px;
+        height: 240px;
+    }
 }
