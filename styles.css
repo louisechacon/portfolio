@@ -399,12 +399,21 @@ footer {
         width: 240px;
         height: 240px;
     }
-}
 
-footer {
-    padding: 25px 15px;
-}
+    .hard-skills,
+    .soft-skills {
+        grid-template-columns: 1fr;
+    }
 
-.redes i {
-    font-size: 45px;
+    footer {
+        padding: 25px 15px;
+    }
+
+    .redes a:hover {
+        color: var(--azul);
+    }
+
+    .redes i {
+        font-size: 45px;
+    }
 }

@@ -17,6 +17,7 @@ temaBtn.addEventListener("click", () => {
     }
 });
 
+
 const btnMenu = document.getElementById("btn-menu");
 const btnFechar = document.getElementById("btn-fechar");
 const navLinks = document.querySelector(".nav-links");
