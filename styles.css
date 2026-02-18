@@ -373,6 +373,24 @@ footer {
         right: 0;
     }
 
+    .nav-links a {
+        font-size: 24px;
+    }
+
+    .toggle {
+        width: 80px;
+        height: 42px;
+    }
+
+    .toggle-circulo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .toggle i {
+        font-size: 24px;
+    }
+
     main {
         margin-top: 80px;
         padding: 80px 20px;
