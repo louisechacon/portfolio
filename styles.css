@@ -220,7 +220,7 @@ section {
 }
 
 .projetos {
-    padding: 50px 0px;
+    margin-top: 70px;
 }
 
 .projetos h2 {
@@ -248,15 +248,12 @@ section {
 
 .thumbnail {
     width: 100%;
-    max-width: 280px;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0px 10px 25px var(--cor-sombra);
 
-}
-
-.thumbnail:hover {
-    transform: translateY(-2px);
 }
 
 .info-projetos {
@@ -285,7 +282,7 @@ section {
 }
 
 .btn-projeto:hover {
-    filter: brightness(120%);
+    filter: brightness(160%);
 }
 
 footer {

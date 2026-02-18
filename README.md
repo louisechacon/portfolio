@@ -2,7 +2,7 @@
 
 # Portfólio - Louise Chacon
 
-<img width="100%" alt="Home Desktop | https://louise-chacon-dev.vercel.app/" src="imagens/pagina.png" />
+<img width="100%" alt="Home Desktop | https://louise-chacon-dev.vercel.app/" src="imagens/home.png" />
 
 Projeto desenvolvido como um portfólio pessoal, com o intuito de registrar meus demais trabalhos como desenvolvedora web.
 
