@@ -3,10 +3,11 @@
     --azul: #24263B;
     --cor-fundo: white;
     --cor-texto: black;
-    --cor-titulo: #24263B;
+    --cor-titulo: #3B3E5B;
     --cor-card-bg: white;
     --cor-sombra: #C4DFEC;
     --cor-borda: #C2CCCA;
+    --cor-icones-redes: var(--azul);
 }
 
 .dark-mode {
@@ -16,6 +17,7 @@
     --cor-card-bg: #1e1e1e;
     --cor-sombra: #000000;
     --cor-borda: #333333;
+    --cor-icones-redes: white;
 }
 
 * {
@@ -158,8 +160,26 @@ section {
     margin-bottom: 5px;
 }
 
-.botao-curriculo {
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    justify-content: start;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+.redes a {
+    font-size: 40px;
+    color: var(--cor-icones-redes);
+}
+
+.redes a:hover {
+    color: var(--rosa);
+}
+
+.btn-curriculo {
     display: inline-block;
+    justify-content: center;
     background-color: var(--rosa);
     color: white;
     border-radius: 8px;
@@ -171,11 +191,11 @@ section {
     text-decoration: none;
 }
 
-.botao-curriculo i {
+.btn-curriculo i {
     margin-right: 8px;
 }
 
-.botao-curriculo:hover {
+.btn-curriculo:hover {
     filter: brightness(120%);
 }
 
@@ -268,7 +288,7 @@ section {
     font-size: 24px;
 }
 
-.botao-projeto {
+.btn-projeto {
     display: inline-block;
     background-color: var(--azul);
     color: white;
@@ -279,11 +299,11 @@ section {
     text-decoration: none;
 }
 
-.botao-projeto i {
+.btn-projeto i {
     margin-right: 8px;
 }
 
-.botao-projeto:hover {
+.btn-projeto:hover {
     filter: brightness(120%);
 }
 
@@ -292,23 +312,6 @@ footer {
     padding: 25px 0px;
     text-align: center;
     margin-top: 50px;
-}
-
-.redes {
-    display: grid;
-    grid-template-columns: repeat(2, 30px);
-    justify-content: center;
-    gap: 35px;
-    margin-bottom: 25px;
-}
-
-.redes a {
-    font-size: 40px;
-    color: var(--azul);
-}
-
-.redes a:hover {
-    color: white;
 }
 
 @media (max-width: 768px) {
@@ -403,6 +406,18 @@ footer {
         text-align: center;
     }
 
+    .redes {
+        justify-content: center;
+    }
+
+    .redes a:hover {
+        color: var(--azul);
+    }
+
+    .redes i {
+        font-size: 45px;
+    }
+
     .foto {
         order: -1; 
         margin-bottom: 10px;
@@ -424,13 +439,5 @@ footer {
 
     footer {
         padding: 25px 15px;
-    }
-
-    .redes a:hover {
-        color: var(--azul);
-    }
-
-    .redes i {
-        font-size: 45px;
     }
 }
