@@ -13,7 +13,6 @@
 <body>
 
     <div id="container">
-
         <header>
             <nav>
                 <i class="fa-solid fa-bars" id="btn-menu"></i>
@@ -24,7 +23,7 @@
                     <li> <a href="#sobre">Sobre mim</a> </li>
                     <li> <a href="#habilidades">Skills</a> </li>
                     <li> <a href="#projetos">Projetos</a> </li>
-                    <li> <a href="#rodape">Contatos</a> </li>
+                    <li> <a href="#contato">Contato</a> </li>
                         
                     <li>
                         <label class="toggle" for="tema-checkbox">
@@ -47,6 +46,14 @@
                         no IFRN. No momento, meus estudos consistem principalmente em aprimorar minhas 
                         habilidades em lógica de programação, algoritmos e web design.
                     </p>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/louise-chacon-458540359/" target="_blank" aria-label="Linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/louisechacon" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
                     <a href="https://drive.google.com/file/d/1Nz8UbZAZDZwDI3rD2yLKza09AbwheY-5/view?usp=sharing" target="_blank" class="btn-curriculo"><i class="fa-solid fa-download"></i>Download CV</a>
                 </div>
 
@@ -139,18 +146,30 @@
             </section>
         </main>
 
+        <section class="contato" id="contato">
+            <h2>Entre em contato</h2>
+            <span class="linha"></span>
+
+            <form class="form-contato" action="/https://formspree.io/f/xwvndnyp" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-email" type="submit">Enviar mensagem</button>
+                    </div>
+            </form>
+        </section>
+
         <footer id="rodape">
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/louise-chacon-458540359/" target="_blank" aria-label="Linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/louisechacon" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:louisechacon26@gmai.com" aria-label="Enviar e-mail">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
             <p class="copyright">© 2026 Louise Chacon | Todos os direitos reservados.</p>
         </footer>
     </div>
