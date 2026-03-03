@@ -24,7 +24,7 @@
                     <li> <a href="#habilidades">Skills</a> </li>
                     <li> <a href="#projetos">Projetos</a> </li>
                     <li> <a href="#contato">Contato</a> </li>
-                        
+
                     <li>
                         <label class="toggle" for="tema-checkbox">
                             <input type="checkbox" id="tema-checkbox" role="switch" aria-label="Alternar tema">
@@ -42,28 +42,28 @@
                 <div class="texto">
                     <h1 class="nome">Louise Chacon</h1>
                     <p class="descricao">
-                        Olá! Sou desenvolvedora de software e estudo Análise e Desenvolvimento de Sistemas 
-                        no IFRN. No momento, meus estudos consistem principalmente em aprimorar minhas 
+                        Olá! Sou desenvolvedora de software e estudo Análise e Desenvolvimento de Sistemas
+                        no IFRN. No momento, meus estudos consistem principalmente em aprimorar minhas
                         habilidades em lógica de programação, algoritmos e web design.
                     </p>
                     <div class="redes">
-                        <a href="https://www.linkedin.com/in/louise-chacon-458540359/" target="_blank" aria-label="Linkedin">
+                        <a href="https://www.linkedin.com/in/louise-chacon-458540359/" target="_blank"
+                            aria-label="Linkedin">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/louisechacon" target="_blank" aria-label="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1Nz8UbZAZDZwDI3rD2yLKza09AbwheY-5/view?usp=sharing" target="_blank" class="btn-curriculo"><i class="fa-solid fa-download"></i>Download CV</a>
+                    <a href="https://drive.google.com/file/d/1Nz8UbZAZDZwDI3rD2yLKza09AbwheY-5/view?usp=sharing"
+                        target="_blank" class="btn-curriculo"><i class="fa-solid fa-download"></i>Download CV</a>
                 </div>
-
                 <div class="foto">
                     <img src="imagens/foto_louise.webp" alt="Foto de Louise" class="icone">
                 </div>
             </section>
 
             <section class="habilidades" id="habilidades">
-
                 <div class="skills">
 
                     <div class="hard-skills">
@@ -129,8 +129,10 @@
                         <img src="imagens/menu_pygame.webp" alt="Print do menu inicial do jogo" class="thumbnail">
                         <div class="info-projetos">
                             <h3>Cat's memory</h3>
-                            <p>Jogo da memória com a temática de gatinhos e construído com Python e a bibilioteca Pygame.</p>
-                            <a href="https://github.com/louisechacon/jogo_pygame" target="_blank" class="btn-projeto"><i class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
+                            <p>Jogo da memória com a temática de gatinhos e construído com Python e a bibilioteca
+                                Pygame.</p>
+                            <a href="https://github.com/louisechacon/jogo_pygame" target="_blank" class="btn-projeto"><i
+                                    class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
                         </div>
                     </article>
 
@@ -138,8 +140,10 @@
                         <img src="imagens/home.webp" alt="Print da página inicial do portfólio" class="thumbnail">
                         <div class="info-projetos">
                             <h3>Portfólio pessoal</h3>
-                            <p>Portfólio construído com HTML, CSS (Grid/Flexbox) e JavaScript. O objetivo é guardar meus projetos pessoais.</p>
-                            <a href="https://github.com/louisechacon/portfolio" target="_blank" class="btn-projeto"><i class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
+                            <p>Portfólio construído com HTML, CSS (Grid/Flexbox) e JavaScript. O objetivo é guardar meus
+                                projetos pessoais.</p>
+                            <a href="https://github.com/louisechacon/portfolio" target="_blank" class="btn-projeto"><i
+                                    class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
                         </div>
                     </article>
                 </div>
@@ -150,22 +154,25 @@
             <h2>Entre em contato</h2>
             <span class="linha"></span>
 
-            <form class="form-contato" action="/https://formspree.io/f/xwvndnyp" method="post">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
-                    </div>
-                    <div>
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
-                    </div>
-                    <div>
-                        <button class="btn-email" type="submit">Enviar mensagem</button>
-                    </div>
+            <form class="form-contato" action="https://formspree.io/f/xwvndnyp" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="user_name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="user_message" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <div>
+                    <button class="btn-email" type="submit">Enviar mensagem</button>
+                </div>
             </form>
         </section>
 
