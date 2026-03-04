@@ -240,21 +240,22 @@ section {
 
 .projetos {
     margin-top: 70px;
-    text-align: center;
 }
 
 .projetos h2 {
     color: var(--cor-titulo);
     font-size: 28px;
     margin-top: 40px;
+    text-align: left;
 }
 
 .trabalhos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 40px;
     padding: 0px 20px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .card-projeto {
@@ -344,10 +345,15 @@ form {
     width: 100%;
     padding: 14px;
     border-radius: 8px;
-    border: 1px solid var(--azul);
+    border: none;
     outline: none;
     font-size: 14px;
     font-family: 'Heebo', sans-serif;
+}
+
+.form-contato input:focus-visible,
+.form-contato textarea:focus-visible {
+    outline: 1px solid white;
 }
 
 .form-contato textarea {
