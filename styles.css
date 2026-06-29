@@ -135,6 +135,15 @@ header {
     color: var(--rosa);
 }
 
+#btn-language {
+    color: white;
+    font-size: 25px;
+}
+
+#btn-language:hover {
+    color: var(--rosa);
+}
+
 main {
     padding: 100px 20px;
     max-width: 900px;
