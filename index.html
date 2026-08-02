@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Louise Chacon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Portfólio - Louise Chacon</title>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                         <i class="fa-solid fa-xmark" id="btn-fechar"></i>
                     </li>
                     <li> <a href="#sobre">Sobre mim</a> </li>
-                    <li> <a href="#habilidades">Skills</a> </li>
+                    <li> <a href="#tecnologias">Tecnologias</a> </li>
                     <li> <a href="#projetos">Projetos</a> </li>
                     <li> <a href="#contato">Contato</a> </li>
 
@@ -42,9 +43,9 @@
                 <div class="texto">
                     <h1 class="nome">Louise Chacon</h1>
                     <p class="descricao">
-                        Olá! Sou desenvolvedora de software em formação e estou cursando Análise e Desenvolvimento de Sistemas
-                        no IFRN. No momento, meus estudos consistem principalmente em aprimorar minhas
-                        habilidades em lógica de programação, algoritmos e web design.
+                        Olá! Sou estudante de Análise e Desenvolvimento de Sistemas no IFRN e tenho grande interesse
+                        em desenvolvimento full-stack. Busco oportunidade para atuar como estagiária, a fim de utilizar
+                        a tecnologia para resolver problemas reais, gerando impactos positivos.
                     </p>
                     <div class="redes">
                         <a href="https://www.linkedin.com/in/louise-chacon-458540359/" target="_blank"
@@ -63,20 +64,25 @@
                 </div>
             </section>
 
-            <section class="habilidades" id="habilidades">
+            <section class="tecnologias" id="tecnologias">
                 <div class="skills">
 
                     <div class="hard-skills">
-                        <h2>Hard skills</h2>
-
-                        <div class="skill-card">
-                            <i class="fab fa-python"></i>
-                            <h3>Python</h3>
-                        </div>
+                        <h2>Tecnologias</h2>
 
                         <div class="skill-card">
                             <i class="fab fa-java"></i>
                             <h3>Java</h3>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="devicon-cplusplus-plain"></i>
+                            <h3>C++</h3>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
                         </div>
 
                         <div class="skill-card">
@@ -96,38 +102,25 @@
                             <h3>PostgreSQL</h3>
                         </div>
                     </div>
-
-                    <div class="soft-skills">
-                        <h2>Soft skills</h2>
-
-                        <div class="skill-card">
-                            <i class="fas fa-comments"></i>
-                            <h3>Comunicação</h3>
-                        </div>
-
-                        <div class="skill-card">
-                            <i class="fas fa-book-open"></i>
-                            <h3>Proatividade</h3>
-                        </div>
-
-                        <div class="skill-card">
-                            <i class="fas fa-list-check"></i>
-                            <h3>Organização</h3>
-                        </div>
-
-                        <div class="skill-card">
-                            <i class="fas fa-users"></i>
-                            <h3>Trabalho em equipe</h3>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             <section class="projetos" id="projetos">
-
                 <h2>Projetos realizados</h2>
 
                 <div class="trabalhos">
+
+                    <article class="card-projeto">
+                        <img src="imagens/diagrama.webp" alt="Print do diagrama de classes" class="thumbnail">
+                        <div class="info-projetos">
+                            <h3>Sistema de gerenciamento de biblioteca</h3>
+                            <p>Construído com a linguagem Java, este projeto tem como objetivo exercitar conceitos
+                                de Programação Orientada a Objetos (POO).</p>
+                            <a href="https://github.com/louisechacon/sistema-gerenciamento-biblioteca" target="_blank" class="btn-projeto"><i
+                                    class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
+                        </div>
+                    </article>
+
                     <article class="card-projeto">
                         <img src="imagens/menu_pygame.webp" alt="Print do menu inicial do jogo" class="thumbnail">
                         <div class="info-projetos">
@@ -143,8 +136,8 @@
                         <img src="imagens/home.webp" alt="Print da página inicial do portfólio" class="thumbnail">
                         <div class="info-projetos">
                             <h3>Portfólio pessoal</h3>
-                            <p>Portfólio construído com HTML, CSS (Grid/Flexbox) e JavaScript. O objetivo é guardar meus
-                                projetos como desenvolvedora de software em formação.</p>
+                            <p>Portfólio construído com HTML, CSS (Grid/Flexbox) e JavaScript, para exercitar habilidades
+                                em frontend e guardar meus projetos como desenvolvedora de software em formação.</p>
                             <a href="https://github.com/louisechacon/portfolio" target="_blank" class="btn-projeto"><i
                                     class="fa-solid fa-up-right-from-square"></i>Ver projeto</a>
                         </div>
