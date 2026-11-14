@@ -1,8 +1,8 @@
-> Status: em andamento
+> Status: Concluído, porém em atualização sempre que necessário
 
 # Portfólio - Louise Chacon
 
-<img width="100%" alt="Home Desktop | https://louise-chacon-dev.vercel.app/" src="imagens/home.png" />
+<img width="100%" alt="Home Desktop | https://louise-chacon-dev.vercel.app/" src="medoa/Animacao.gif" />
 
 Projeto desenvolvido como um portfólio pessoal, com o intuito de registrar meus demais trabalhos como desenvolvedora de software em formação.
 
